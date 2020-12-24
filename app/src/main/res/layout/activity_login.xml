@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leariningapp.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:padding="20dp"
+        android:paddingBottom="60dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        app:boxBackgroundMode="outline"
+        android:layout_below="@+id/login_text"
+        android:id="@+id/textinput_email"
+        app:errorEnabled="true"
+        android:backgroundTint="@color/colorRed"
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="Email : "
+            android:id="@+id/email_login"
+            android:background="@drawable/edit_text_background"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_below="@+id/textinput_email"
+        android:id="@+id/textinput_password"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="@color/colorRed"
+        app:boxBackgroundMode="outline"
+        app:errorEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"
+        android:id="@+id/btn_signup2"
+        android:layout_below="@+id/textinput_password"
+        android:background="@drawable/btn_border"
+        android:text="Sign Up"
+        />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:layout_margin="30dp"
+        android:id="@+id/btn_login"
+        android:text="Login"
+        android:background="@drawable/btn_background_white"
+        android:layout_below="@+id/btn_signup2"
+
+        />
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                    Forgot Your Password ?"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginRight="8dp"
+        android:padding="20dp"
+        android:layout_margin="30dp"
+        android:textSize="15sp"
+        />
+</RelativeLayout>
